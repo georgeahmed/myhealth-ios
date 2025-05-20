@@ -1,0 +1,16 @@
+name: iOS CI
+
+on: [push]
+
+jobs:
+build-ios:
+runs-on: macos-latest
+steps:
+- uses: actions/checkout@v3
+  - name: Build App
+    run: |
+      xcodebuild \
+        -project MyHealthiOS.xcodeproj \
+        -scheme MyHealthiOS \
+        -sdk iphonesimulator \
+        build
