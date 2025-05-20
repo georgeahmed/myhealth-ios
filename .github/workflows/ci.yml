@@ -8,10 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build App
-        run: |
-          xcodebuild \
-            -project myhealth-ios.xcodeproj \
-            -scheme myhealth-ios \
             -sdk iphonesimulator \
             build
