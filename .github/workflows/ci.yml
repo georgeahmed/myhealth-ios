@@ -11,7 +11,7 @@ jobs:
       - name: Build App
         run: |
           xcodebuild \
-            -project MyHealthiOS.xcodeproj \
-            -scheme MyHealthiOS \
+            -project myhealth-ios.xcodeproj \
+            -scheme myhealth-ios \
             -sdk iphonesimulator \
             build
